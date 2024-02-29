@@ -4,6 +4,7 @@ const ligar = document.getElementById('ligar');
 const desligar = document.getElementById('desligar');
 const conserta = document.getElementById('conserta');
 const lamp =  document.getElementById('lamp');
+var ligada = false;
 
 //--------------------Funções----------------
 function ta_ruim(){
@@ -11,9 +12,11 @@ function ta_ruim(){
     //-----------Retorna True ou False----------------
        
 }
-function lamp_ligou(){
+function ligoudesligou(){
     if (!ta_ruim()){
-        lamp.src='img/ligada.jpg'
+        if(!ligada){
+         lamp.src='img/ligada.jpg'
+        }
     }
 }
 function lamp_desligar(){
