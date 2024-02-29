@@ -16,28 +16,30 @@ function ligoudesligou(){
     if (!ta_ruim()){
         if(!ligada){
          lamp.src='img/ligada.jpg'
+         ligada = true
+         texto.innerHTML = "Ligou!!!!!"
         }
-    }
-}
-function lamp_desligar(){
-    if (!ta_ruim()){
-        lamp.src='img/desligada.jpg'
+        else if(ligada){
+            lampada.src = "img/desligada.jpg"
+            ligada = false
+            texto.innerHTML = "Desligou:/"
+        }
     }
 }
 function regen(){
     if(ta_ruim){
         lamp.src='img/desligada.jpg'
+        texto.innerHTML = "Consertada mlk!"
     }
 }
 function quebrou(){
     lamp.src='img/quebrada.jpg'
+    texto.innerHTML = "NAAAAO QUEBRO!!!"
 }
 
 //--------------------Eventos-------------------
 
-ligar.addEventListener('click',lamp_ligou)
-desligar.addEventListener('click',lamp_desligar)
+ligar.addEventListener('click',ligoudesligou)
 conserta.addEventListener('dblclick',regen)
 lamp.addEventListener('dblclick',quebrou)
-lamp.addEventListener('mouseover',lamp_ligou)
-lamp.addEventListener('mouseleave',lamp_desligar)
+lamp.addEventListener('mouseover',ligoudesligou)
