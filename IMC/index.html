@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cálculo de IMC</h1>
+        <p>Informe seu peso <input type="text" id="peso"></p>
+        <p>Informe sua altura <input type="text" id="alt"></p>
+        <p>Informe seu gênero
+            <select name="gender" id="gender">
+            <option value="mas">Masculino</option>
+            <option value="fem">Feminino</option>
+        </select></p>
+        <button id="calc">Calcular</button>
+        <p>Seu IMC é <span id="result"></span></p>
+        <p>Seu diagnostico é <span id="tabela"></span></p>
+        <button id="new">Novo Calculo</button>
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>
