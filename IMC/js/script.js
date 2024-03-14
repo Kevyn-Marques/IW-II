@@ -5,6 +5,7 @@ const calc = document.getElementById("calc")
 const novo = document.getElementById("new")
 const result = document.getElementById("result")
 const tabela = document.getElementById("tabela")
+const tab = document.getElementById ("tab")
 
 var heigth;
 var mass;
@@ -67,12 +68,13 @@ function calcular(){
         result.innerHTML = imc.toFixed(2)
      }
      final();
+     tab.src = "img/param.png"
 }
 function limpa(){
     peso.value  = ""
     altura.value = ""
-    result.value = ""
-    tabela.value = ""
+    result.innerHTML = ""
+    tabela.innerHTML = ""
 }
 calc.addEventListener("click",calcular)
 novo.addEventListener("click",limpa)

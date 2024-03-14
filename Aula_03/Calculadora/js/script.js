@@ -6,6 +6,7 @@ const sub = document.getElementById('sub')
 const mult = document.getElementById('mult')
 const divi = document.getElementById('divi')
 const resultado = document.getElementById('resultado')
+const dansa = document.getElementById('dansa')
 var num1 = 0
 var num2 = 0
 var conta = 0
@@ -15,25 +16,29 @@ function Mais(){
     num1 = Number(viraNum1.value)
     num2 = Number(viraNum2.value)
     conta = (num1 + num2)
-    resultado.innerHTML = (conta)  
+    resultado.innerHTML = (conta) 
+    dansa.src = "img/esquelis.gif" 
 }
 function Menos(){
     num1 = Number(viraNum1.value)
     num2 = Number(viraNum2.value)
     conta = (num1 - num2)
-    resultado.innerHTML = (conta)  
+    resultado.innerHTML = (conta) 
+    dansa.src = "img/esquelis.gif"  
 }
 function Vezes(){
     num1 = Number(viraNum1.value)
     num2 = Number(viraNum2.value)
     conta = (num1 * num2)
-    resultado.innerHTML = (conta)  
+    resultado.innerHTML = (conta) 
+    dansa.src = "img/esquelis.gif"  
 }
 function Dividir(){
     num1 = Number(viraNum1.value)
     num2 = Number(viraNum2.value)
     conta = (num1 / num2)
-    resultado.innerHTML = (conta)  
+    resultado.innerHTML = (conta) 
+    dansa.src = "img/esquelis.gif"  
 }
 
 //----------------Eventos-------------------
