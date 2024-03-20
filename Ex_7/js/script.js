@@ -1,6 +1,6 @@
-const button = document.getElementById("button");
-const p = document.getElementById("p");
-const r = document.getElementById("r");
+const salar = document.getElementById("button");
+const resul = document.getElementById("p");
+const finalz = document.getElementById("r");
 
 function reajustar(){
     var nome = prompt("Digite o nome do funcionário:");
