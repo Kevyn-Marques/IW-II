@@ -1,17 +1,23 @@
-const salar = document.getElementById("button");
-const resul = document.getElementById("p");
-const finalz = document.getElementById("r");
+const salar = document.getElementById("salar");
+const resul = document.getElementById("resul");
+const finalz = document.getElementById("finalz");
+var nome = ' '
+var sal = 0
+var aumenta = 0
 
 function reajustar(){
-    var nome = prompt("Digite o nome do funcionário:");
-    var sal = prompt("Digite o salário atual de " + nome + ":");
-    var aum = prompt("Digite o reajuste do salário em porcentagem: ");
+    nome = prompt("Digite o nome do funcionário:");
+    sal = prompt("Digite o salário atual de " + nome + ":");
+     aumeta = prompt("Digite o reajuste do salário em porcentagem: ");
 
     sal = Number(sal);
-    aum = Number(aum);
-    var porc = (sal/100)*aum;
-    p.innerHTML = "O salário de " + nome + " era de R$" + sal + ",00. Acrescentando " + aum + "%, O salário irá aumentar R$"+ porc + ",00";
-    r.innerHTML = "Agora seu salário será de R$" + (sal+porc) + ",00"
+    aumenta = Number(aumenta);
+    
+    
+    var porcen = (sal/100)*aumenta;
+    
+    resul.innerHTML = "O salário de " + nome + " era de R$" + sal + ",00. Acrescentando " + aumenta + "%, O salário irá aumentar R$"+ porcen + ",00";
+    finalz.innerHTML = "Agora seu salário será de R$" + (sal+porcen) + ",00"
 }
 
-button.addEventListener("click", reajustar)
+salar.addEventListener("click", reajustar)
