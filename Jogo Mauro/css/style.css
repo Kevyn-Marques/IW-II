@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 .gamer-board{
+    background-image: url(../img/Cenario.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
     width: 80%;
     height: 500px;
     border:1px solid green;
@@ -50,4 +53,26 @@
     100%{
         bottom:0;
     }
+}
+button{
+    margin-left:45%;
+    margin-top: 3%;
+}
+.nave{
+    position: absolute;
+    width:80px;
+    right: 100%;
+    animation:nave-voa 5s infinite ease-in-out;
+}
+@keyframes nave-voa{
+    from{
+        right:0;
+    }
+    to{
+        rigth:100%;
+    }
+}
+p{
+    font-size: 40px;
+    color:aliceblue;
 }
